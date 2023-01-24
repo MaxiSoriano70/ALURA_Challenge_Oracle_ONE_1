@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador - Desencriptador by Maximiliano Soriano</title>
+</head>
+<body>
+    <main>
+        <section class="cuerpo">
+            <div class="izquierda">
+                <div class="titulo">
+                    <div class="imgLogo">
+                        <img class="logo" src="imagenes/Logo.png" alt="Logo-Alura">
+                    </div>
+                    <div class="tituloPrincipal">
+                        <h1>Maximiliano Soriano</h1>
+                    </div>
+                </div>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <p class="infoIzquierda">&#128712; Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">
+                        Encriptar
+                    </button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+            <div class="derecha">
+                <img class="img-muñeco" src="imagenes/Muñeco.png" alt="img-muñeco">
+                <p class="infoDerecha1">
+                    Ningún mensaje fue encontrado
+                </p>
+                <p class="infoDerecha2">
+                    Mensaje Encriptado
+                </p>
+                <textarea class="mensaje" cols="20" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                <button class="btn-copiar" onclick="copiar()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
